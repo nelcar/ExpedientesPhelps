@@ -10,3 +10,12 @@ Investigadores::Investigadores(string nombre,string usuario,int edad,string id,s
 }
 Investigadores::Investigadores(){}
 Investigadores::~Investigadores(){}
+void setCasos(int casos){
+	this->casos=casos;
+}
+void setCasosCerrados(int casosCerrados){
+	this->casosCerrados=casosCerrados;
+}
+void setCasosSinResolver(int casosSinResolver){
+	this->casosSinResolver=casosSinResolver;
+}
