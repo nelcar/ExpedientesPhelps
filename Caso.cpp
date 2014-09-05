@@ -38,5 +38,18 @@ void Caso::setCompletado(bool completado){
 }
 
 string Caso::toString() const{
-
+	cout<<"Numero de caso: "<<numero_caso<<endl;
+	for (int i = 0; i < investigadores.size(); ++i){
+		cout<<"Investigador "<<i+1<<": "<<investigadores[i]<<endl;	
+	}
+	for (int i = 0; i < evidencia.size(); ++i){
+		cout<<"Evidencia "<<i+1<<": "<<evidencia[i]<<endl;
+	}
+	cout<<"Hora: "<<hora<<endl;
+	cout<<"Fecha: "<<fecha<<endl;
+	if (completado == true);{
+		cout<<"Completado: si"<<endl;
+	}else {
+		cout<<"Completado: no"<<endl;
+	}
 }

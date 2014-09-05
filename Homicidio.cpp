@@ -27,5 +27,9 @@ void Homicidio::setCulpable(string culpable){
 }
 
 string Homicidio::toString() const{
-
+	for (int i = 0; i < sospechosos.size(); ++i){
+		cout<<"Sospechoso "<<i+1<<": "<<sospechosos[i]<<endl;
+	}
+	cout<<"Sospechoso principal: "<<sospechoso_principal<<endl;
+	cout<<"Victima: "<<victima<<endl;
 }

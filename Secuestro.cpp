@@ -40,4 +40,19 @@ void Secuestro::setEstado_victima(string estado_victima){
 }
 
 string Secuestro::toString() const{
+	cout<<"Victima: "<<victima<<endl;
+	cout<<"Lugar de secuestro: "<<lugar_secuestro<<endl;
+	cout<<"Motivo: "<<motivo<<endl;
+	if (rescate==true){
+		cout<<"Rescate: si"<<endl;
+		cout<<"Cantidad: "<<cantidad<<endl;
+	}else{
+		cout<<"Rescate: no"<<endl;
+	}
+	if (completado_caso==true){
+		cout<<"Completado: si"<<endl;
+		cout<<"Estado de la victima: "<<estado_victima<<endl;
+	}else{
+		cout<<"Completado: no"<<endl;
+	}
 }
