@@ -1,6 +1,7 @@
+#pragma once
 #include "Caso.h"
 #include <string>
-class Secuestro
+class Secuestro: public Caso
 {
 	string victima;
 	string lugar_secuestro;

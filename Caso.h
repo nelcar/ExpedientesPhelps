@@ -1,3 +1,4 @@
+#pragma once
 #include "Evidencias.h"
 #include "Investigadores.h"
 #include <vector>

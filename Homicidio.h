@@ -1,7 +1,8 @@
+#pragma once
 #include "Caso.h"
 #include <vector>
 #include <string>
-class Homicidio
+class Homicidio: public Caso
 {
 	vector<string> sospechosos;
 	string sospechoso_principal;
