@@ -2,7 +2,7 @@
 #include <string>
 #include "Persona.h"
 using namespace std;
-class Investigadores; public Persona{
+class Investigadores: public Persona{
 	int casos,casosCerrados,casosSinResolver;
 public:
 	Investigadores();
