@@ -9,6 +9,7 @@ public:
 	PersonalAdministrativo(string,string,int,string,string,string,string);
 	PersonalAdministrativo();
 	~PersonalAdministrativo();
-
+	void setClaveIngreso(string);
+	void setPuesto(string);
 	
 };
