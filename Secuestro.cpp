@@ -1,8 +1,9 @@
+#include "Secuestro.h"
 #include <iostream>
 #include <string>
 using namespace std;
 
-Secuestro(string victima, string lugar_secuestro, string motivo, bool rescate, bool completado_caso){
+Secuestro::Secuestro(string victima, string lugar_secuestro, string motivo, bool rescate, bool completado_caso){
 	this->victima = victima;
 	this->lugar_secuestro = lugar_secuestro;
 	this->motivo = motivo;
@@ -39,5 +40,4 @@ void Secuestro::setEstado_victima(string estado_victima){
 }
 
 string Secuestro::toString() const{
-	this->sospechosos = sospechosos;
 }

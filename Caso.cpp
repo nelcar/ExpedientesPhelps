@@ -1,8 +1,10 @@
+#include "Caso.h"
+#include "Evidencias.h"
 #include <iostream>
 #include <string>
 using namespace std;
 
-Caso(int numero_caso, vector<Investigadores> investigadores,vector<Evidencia> evidencia, string hora, string fecha, bool completado){
+Caso::Caso(int numero_caso, vector<Investigadores> investigadores,vector<Evidencias> evidencia, string hora, string fecha, bool completado){
 	this->numero_caso = numero_caso;
 	this->investigadores = investigadores;
 	this->evidencia = evidencia;
@@ -19,7 +21,7 @@ void Caso::setInvestigadores(vector<Investigadores> investigadores){
 	this->investigadores = investigadores;
 }
 
-void Caso::setEvidencia(vector<Evidencia> evidencia){
+void Caso::setEvidencia(vector<Evidencias> evidencia){
 	this->evidencia = evidencia;
 }
 

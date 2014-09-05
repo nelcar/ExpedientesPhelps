@@ -1,8 +1,10 @@
+#include "Homicidio.h"
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
-Homicidio(vector<string> sospechosos, string sospechoso_principal, string victima){
+Homicidio::Homicidio(vector<string> sospechosos, string sospechoso_principal, string victima){
 	this->sospechosos = sospechosos;
 	this->sospechoso_principal = sospechoso_principal;
 	this->victima = victima;
