@@ -10,7 +10,7 @@ class Persona
 	string id;
 	string fecha_nac;
 public:
-	Persona(string,string,int,string,string="");
+	Persona(string,string,int,string,string);
 	Persona();
 	~Persona();
 

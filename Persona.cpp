@@ -1,6 +1,6 @@
 #include "Persona.h"
 #include <string>
-#include <stream>
+#include <sstream>
 using namespace std;
 Persona::Persona(){
 
