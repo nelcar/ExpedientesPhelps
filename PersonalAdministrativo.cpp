@@ -14,3 +14,9 @@ PersonalAdministrativo::setClaveIngreso(string claveIngreso){
 PersonalAdministrativo::setPuesto(string puesto){
 	this->puesto=puesto;
 }
+string PersonalAdministrativo::toString() const{
+	stringstream ss;
+	ss<<"Nombre: "<<nombre<<"\nUsuario: "<<usuario<<"\nEdad: "<<edad<<"\nId: "<<id<<"\nFecha de Nacimiento: "<<fecha_nac
+	  <<"\nClave de ingreso: "<<claveIngreso<<"\nPuesto: "<<puesto;
+
+}
