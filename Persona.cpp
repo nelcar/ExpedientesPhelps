@@ -12,7 +12,7 @@ Persona::Persona(string nombre,string usuario,int edad,string id,string fecha_na
 	this->id=id;
 	this->fecha_nac=fecha_nac;
 }
-string Persona::toString() const;
+
 void Persona::setNombre(string nombre){
 	this->nombre=nombre;
 }
