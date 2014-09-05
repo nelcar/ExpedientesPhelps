@@ -3,6 +3,8 @@
 #include "Investigadores.h"
 #include <vector>
 #include <string>
+using namespace std;
+
 class Caso
 {
 	int numero_caso;

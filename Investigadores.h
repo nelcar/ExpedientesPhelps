@@ -2,6 +2,7 @@
 #include <string>
 #include "Persona.h"
 using namespace std;
+
 class Investigadores: public Persona{
 	int casos,casosCerrados,casosSinResolver;
 public:
@@ -11,5 +12,6 @@ public:
 	void setCasos(int);
 	void setCasosCerrados(int);
 	void setCasosSinResolver(int);
+	virtual string toString() const;
 	
 };

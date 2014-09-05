@@ -2,6 +2,7 @@
 #include "Evidencias.h"
 #include <iostream>
 #include <string>
+#include <sstream>
 using namespace std;
 
 Caso::Caso(int numero_caso, vector<Investigadores> investigadores,vector<Evidencias> evidencia, string hora, string fecha, bool completado){
@@ -38,18 +39,21 @@ void Caso::setCompletado(bool completado){
 }
 
 string Caso::toString() const{
-	cout<<"Numero de caso: "<<numero_caso<<endl;
+	stringstream ss;
+	ss.str("");
+	ss<<"Numero de caso: "<<numero_caso<<endl;
 	for (int i = 0; i < investigadores.size(); ++i){
-		cout<<"Investigador "<<i+1<<": "<<investigadores[i]<<endl;	
+		ss<<"Investigador "<<(i+1)<<": "<<(investigadores[i]).toString()<<endl;	
 	}
 	for (int i = 0; i < evidencia.size(); ++i){
-		cout<<"Evidencia "<<i+1<<": "<<evidencia[i]<<endl;
+		ss<<"Evidencia "<<(i+1)<<": "<<(evidencia[i]).toString()<<endl;
 	}
-	cout<<"Hora: "<<hora<<endl;
-	cout<<"Fecha: "<<fecha<<endl;
-	if (completado == true);{
-		cout<<"Completado: si"<<endl;
+	ss<<"Hora: "<<hora<<endl;
+	ss<<"Fecha: "<<fecha<<endl;
+	if (completado == true){
+		ss<<"Completado: si"<<endl;
 	}else {
-		cout<<"Completado: no"<<endl;
+		ss<<"Completado: no"<<endl;
 	}
+	return ss.str();
 }

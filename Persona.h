@@ -20,7 +20,7 @@ public:
 	void setEdad(int);
 	void setId(string);
 	void setFecha_nac(string);
-	virtual void visualizar()= 0;
+	//virtual void visualizar()= 0;
 
 	
 };

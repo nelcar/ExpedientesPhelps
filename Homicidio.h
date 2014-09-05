@@ -2,6 +2,8 @@
 #include "Caso.h"
 #include <vector>
 #include <string>
+using namespace std;
+
 class Homicidio: public Caso
 {
 	vector<string> sospechosos;
@@ -14,7 +16,7 @@ public:
 	void setVictima(string);
 	void setCulpable(string);
 	string toString() const;
-	Homicidio(vector<string>, string, string);
+	Homicidio(int, vector<Investigadores>,vector<Evidencias>, string, string, bool, vector<string>, string, string);
 	Homicidio();
 	~Homicidio();
 	

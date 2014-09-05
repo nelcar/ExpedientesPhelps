@@ -2,9 +2,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <sstream>
 using namespace std;
 
-Homicidio::Homicidio(vector<string> sospechosos, string sospechoso_principal, string victima){
+Homicidio::Homicidio(int numero_caso, vector<Investigadores> investigadores,vector<Evidencias> evidencia, string hora, string fecha, bool completado, vector<string> sospechosos, string sospechoso_principal, string victima){
 	this->sospechosos = sospechosos;
 	this->sospechoso_principal = sospechoso_principal;
 	this->victima = victima;
@@ -27,9 +28,12 @@ void Homicidio::setCulpable(string culpable){
 }
 
 string Homicidio::toString() const{
+	stringstream ss;
+	ss.str("");
 	for (int i = 0; i < sospechosos.size(); ++i){
-		cout<<"Sospechoso "<<i+1<<": "<<sospechosos[i]<<endl;
+		ss<<"Sospechoso "<<(i+1)<<": "<<(sospechosos[i])<<endl;
 	}
-	cout<<"Sospechoso principal: "<<sospechoso_principal<<endl;
-	cout<<"Victima: "<<victima<<endl;
+	ss<<"Sospechoso principal: "<<sospechoso_principal<<endl;
+	ss<<"Victima: "<<victima<<endl;
+	return ss.str();
 }
