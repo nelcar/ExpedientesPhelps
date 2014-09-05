@@ -13,7 +13,7 @@ public:
 	void setVictima(string);
 	void setCulpable(string);
 	string toString() const;
-	Homicidio(vector<string>, string, string);
+	Homicidio(vector<string>, string, string, string);
 	Homicidio();
 	~Homicidio();
 	
