@@ -11,6 +11,7 @@ class Persona
 	string fecha_nac;
 public:
 	Persona(string,string,int,string,string="");
+	Persona();
 	~Persona();
 
 	virtual string toString() const;
@@ -19,6 +20,7 @@ public:
 	void setEdad(int);
 	void setId(string);
 	void setFecha_nac(string);
+	virtual void visualizar()= 0;
 
 	
 };
