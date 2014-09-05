@@ -10,12 +10,19 @@ Investigadores::Investigadores(string nombre,string usuario,int edad,string id,s
 }
 Investigadores::Investigadores(){}
 Investigadores::~Investigadores(){}
-void setCasos(int casos){
+void Investigadores::setCasos(int casos){
 	this->casos=casos;
 }
-void setCasosCerrados(int casosCerrados){
+void Investigadores::setCasosCerrados(int casosCerrados){
 	this->casosCerrados=casosCerrados;
 }
-void setCasosSinResolver(int casosSinResolver){
+void Investigadores::setCasosSinResolver(int casosSinResolver){
 	this->casosSinResolver=casosSinResolver;
+}
+string Investigadores::toString() const{
+	stringstream ss;
+	ss<<"Nombre: "<<nombre<<"\nUsuario: "<<usuario<<"\nEdad: "<<edad<<"\nId: "<<id<<"\nFecha de Nacimiento: "<<fecha_nac
+	  <<"\nCasos atendidos: "<<casos<<"\nCasos cerrados: "<<casosCerrados<<"\nCasos sin resolver: "<<casosSinResolver;
+	return ss.str();
+
 }
