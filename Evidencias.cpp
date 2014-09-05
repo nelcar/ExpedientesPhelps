@@ -1,6 +1,7 @@
 #include "Evidencias.h"
 #include <iostream>
 #include <sstream>
+using std::string;
 using namespace std;
 
 Evidencias::Evidencias(){
@@ -11,7 +12,7 @@ Evidencias::Evidencias(string nombre, string tipoObjeto, string lugar, string hu
 	this->tipoObjeto = tipoObjeto;
 	this->lugar = lugar;
 	this->huellas = huellas;
-	this-> procesada = procesada;
+	this->procesada = procesada;
 }
 Evidencias::~Evidencias(){
 
@@ -24,33 +25,33 @@ string Evidencias::toString()const{
 	return ss.str();
 }
 
-void setNombre(string nombre){
+void Evidencias::setNombre(string nombre){
 	this->nombre = nombre;
 }
-void setTipoObjeto(string tipoObjeto){
+void Evidencias::setTipoObjeto(string tipoObjeto){
 	this->tipoObjeto = tipoObjeto;
 }
-void setlugar(string lugar){
+void Evidencias::setlugar(string lugar){
 	this->lugar = lugar;
 }
-void sethuellas(string huellas){
+void Evidencias::sethuellas(string huellas){
 	this->huellas = huellas;
 }
-void setprocesada(string procesada){
+void Evidencias::setprocesada(string procesada){
 	this->procesada = procesada;
 }
-string getNombre(){
+string Evidencias::getNombre(){
 	return nombre;
 }
-string getTipoObjeto(){
+string Evidencias::getTipoObjeto(){
 	return tipoObjeto;
 }
-string getlugar(){
+string Evidencias::getlugar(){
 	return lugar;
 }
-string gethuellas(){
-	return gethuellas;
+string Evidencias::gethuellas(){
+	return huellas;
 }
-string getprocesada(){
+string Evidencias::getprocesada(){
 	return procesada;
 }

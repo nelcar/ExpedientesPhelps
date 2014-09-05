@@ -8,10 +8,10 @@ class Evidencias
 	string tipoObjeto;
 	string lugar;
 	string huellas;
-	string precesada;
+	string procesada;
 public:
 	Evidencias();
-	Evidencias(string, string, string, string, sting);
+	Evidencias(string, string, string, string, string);
 	~Evidencias();
 
 	string toString()const;
