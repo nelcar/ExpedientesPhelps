@@ -11,5 +11,5 @@ public:
 	~PersonalAdministrativo();
 	void setClaveIngreso(string);
 	void setPuesto(string);
-	
+	virtual string toString() const;
 };

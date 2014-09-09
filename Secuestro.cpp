@@ -1,15 +1,20 @@
 #include "Secuestro.h"
+#include "Caso.h"
 #include <iostream>
 #include <string>
 #include <sstream>
 using namespace std;
 
-Secuestro::Secuestro(int numero_caso, vector<Investigadores> investigadores,vector<Evidencias> evidencia, string hora, string fecha, bool completado, string victima, string lugar_secuestro, string motivo, bool rescate, bool completado_caso){
+Secuestro::Secuestro(int numero_caso, vector<Investigadores> investigadores,vector<Evidencias> evidencia, string hora, string fecha, bool completado, string victima, string lugar_secuestro, string motivo, bool rescate, bool completado_caso):Caso(numero_caso, investigadores, evidencia, hora, fecha, completado){
 	this->victima = victima;
 	this->lugar_secuestro = lugar_secuestro;
 	this->motivo = motivo;
 	this->rescate = rescate;
 	this->completado_caso = completado_caso;
+}
+
+Secuestro::Secuestro():Caso(){
+
 }
 
 void Secuestro::setVictima(string victima){

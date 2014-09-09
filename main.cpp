@@ -1,6 +1,6 @@
 #include "Caso.h"
 #include "Evidencias.h"
-#include "homiciodio.h"
+#include "Homicidio.h"
 #include "Persona.h"
 #include "Secuestro.h"
 #include <iostream>

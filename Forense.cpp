@@ -7,8 +7,9 @@ Forense::Forense(string nombre,string usuario,int edad,string id,string fecha_na
 	this->fecha_ingreso=nombre;
 	this->horario=horario;
 }
-Forense::Forense():Persona(){}
-Forense::~Forense(){}
+Forense::Forense():Persona(){
+	
+}
 void Forense::setFecha_ingreso(string fecha_ingreso){
 	this->fecha_ingreso=fecha_ingreso;
 }

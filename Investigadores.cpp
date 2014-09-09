@@ -21,8 +21,7 @@ void Investigadores::setCasosSinResolver(int casosSinResolver){
 }
 string Investigadores::toString() const{
 	stringstream ss;
-	ss<<"Nombre: "<<nombre<<"\nUsuario: "<<usuario<<"\nEdad: "<<edad<<"\nId: "<<id<<"\nFecha de Nacimiento: "<<fecha_nac
-	  <<"\nCasos atendidos: "<<casos<<"\nCasos cerrados: "<<casosCerrados<<"\nCasos sin resolver: "<<casosSinResolver;
+	ss<<"Casos atendidos: "<<casos<<"\nCasos cerrados: "<<casosCerrados<<"\nCasos sin resolver: "<<casosSinResolver;
 	return ss.str();
 
 }

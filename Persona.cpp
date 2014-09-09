@@ -32,8 +32,3 @@ void Persona::setId(string Id){
 void Persona::setFecha_nac(string fecha_nac){
 	this->fecha_nac=fecha_nac;
 }
-string toString() const{
-	stringstream ss;
-	ss ="Hola";
-	return ss;
-}
