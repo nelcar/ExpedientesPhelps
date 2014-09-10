@@ -68,36 +68,36 @@ int main (int argc, char** argv){
 int menu(int opcion){ // menu
 	int res = 0;
 	if (opcion == 1){ // menu principal
-		cout << "Expedientes PHELPS" << endl << "1. Agregar" << endl << "2. Modificar" << endl << "3. Eliminar"
-			 << endl << "4. Salir" << "	Respueta: ";
+		cout << "---------------Expedientes PHELPS---------------" << endl << "1. Agregar" << endl << "2. Modificar" << endl << "3. Eliminar"
+			 << endl << "4. Salir" << endl <<"Ingrese su opcion: ";
 		cin >> res;
 		cout << endl;
 		return res;
 	}
 	if (opcion == 2){ // menu Agregar
-		cout << "AGREGAR" << endl << "1. Persona" << endl << "2. Evidencias" << endl << "3. Casos" 
-			 << endl << "4. Salir" << endl << "	Respuesta: ";
+		cout << "--------------------AGREGAR--------------------" << endl << "1. Persona" << endl << "2. Evidencias" << endl << "3. Casos" 
+			 << endl << "4. Salir" << endl << "Ingrese su opcion: ";
 		cin >> res;
 		cout << endl;
 		return res;
 	}
 	if (opcion == 3){ // menu Modificar
-		cout << "MODIFICAR" << endl << "1. Persona" << endl << "2. Evidencias" << endl << "3. Casos" 
-			 << endl << "4. Salir" << endl << "	Respuesta: ";
+		cout << "-------------------MODIFICAR-------------------" << endl << "1. Persona" << endl << "2. Evidencias" << endl << "3. Casos" 
+			 << endl << "4. Salir" << endl << "Ingrese su opcion: ";
 		cin >> res;
 		cout << endl;
 		return res;
 	}
 	if (opcion == 4){ // menu Eliminar
-		cout << "ELIMINAR" << endl << "1. Persona" << endl << "2. Evidencias" << endl << "3. Casos" 
-			 << endl << "4. Salir" << endl << "	Respuesta: ";
+		cout << "--------------------ELIMINAR--------------------" << endl << "1. Persona" << endl << "2. Evidencias" << endl << "3. Casos" 
+			 << endl << "4. Salir" << endl << "Ingrese su opcion: ";
 		cin >> res;
 		cout << endl;
 		return res;
 	}
 	if (opcion == 5){ // menu agregar persona
-		cout << "TIPO DE PERSONA" << endl << "1. Personal Administrativo" << endl << "2. Investigador" 
-			 << endl << "3. Forense" << endl << "Respusta: ";
+		cout << "----------------TIPO DE PERSONA----------------" << endl << "1. Personal Administrativo" << endl << "2. Investigador" 
+			 << endl << "3. Forense" << endl << "Ingrese su opcion: ";
 		cin >> res;
 		cout << endl;
 		return res;	
@@ -112,18 +112,18 @@ void agregarPersona(){
 	string identidad;
 	string fechaNacimiento;
 
-	cout << endl << "************************************************************************" << endl;
-	cout << "	Nombre Real: ";
+	cout << endl << "***********************************************************" << endl;
+	cout << "Nombre Real: ";
 	cin >> nombreReal;
-	cout << endl << "	Nombre de Usuario: ";
+	cout << endl << "Nombre de Usuario: ";
 	cin >> nombreUsuario;
-	cout << endl << "	Contraseña: ";
+	cout << endl << "Contraseña: ";
 	cin >> contrasena;
-	cout << endl << "	Edad: ";
+	cout << endl << "Edad: ";
 	cin >> edad;
-	cout << endl << "	Identidad: ";
+	cout << endl << "Identidad: ";
 	cin >> identidad;
-	cout << endl << " Fecha de Nacimiento: ";
+	cout << endl << "Fecha de Nacimiento: ";
 	cin >> fechaNacimiento;
 
 	int opcion;
@@ -131,8 +131,6 @@ void agregarPersona(){
 
 }
 void agregarEvidencia(){
+	cout << endl << "***********************************************************" << endl;
 	
-
-	cout << endl << "************************************************************************" << endl;
-
 }
