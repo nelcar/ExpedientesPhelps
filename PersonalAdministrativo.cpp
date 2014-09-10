@@ -10,6 +10,9 @@ PersonalAdministrativo::PersonalAdministrativo(string nombre,string usuario,int 
 	this-> claveIngreso = claveIngreso;
 	this-> puesto = puesto;
 }
+PersonalAdministrativo::~PersonalAdministrativo(){
+	
+}
 void PersonalAdministrativo::setClaveIngreso(string claveIngreso){
 	this->claveIngreso=claveIngreso;
 }

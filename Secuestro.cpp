@@ -13,10 +13,12 @@ Secuestro::Secuestro(int numero_caso, vector<Investigadores> investigadores,vect
 	this->completado_caso = completado_caso;
 }
 
-Secuestro::Secuestro():Caso(){
+Secuestro::Secuestro(){
 
 }
+Secuestro::~Secuestro(){
 
+}
 void Secuestro::setVictima(string victima){
 	this->victima = victima;
 }

@@ -8,8 +8,12 @@ Investigadores::Investigadores(string nombre,string usuario,int edad,string id,s
 	this->casosCerrados=casosCerrados;
 	this->casosSinResolver=casosSinResolver;
 }
-Investigadores::Investigadores(){}
-Investigadores::~Investigadores(){}
+Investigadores::Investigadores(){
+	
+}
+Investigadores::~Investigadores(){
+
+}
 void Investigadores::setCasos(int casos){
 	this->casos=casos;
 }

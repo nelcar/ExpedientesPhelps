@@ -3,11 +3,7 @@
 //OSCAR GABRIEL ORDOÑES
 #include "Caso.h"
 #include "Evidencias.h"
-<<<<<<< HEAD
 #include "Homicidio.h"
-=======
-#include "homicidio.h"
->>>>>>> 1aadbcdc3207d2207fd67a3a0b040e78e4afd99f
 #include "Persona.h"
 #include "Secuestro.h"
 #include <iostream>
@@ -103,7 +99,7 @@ int menu(int opcion){ // menu
 		cout << "TIPO DE PERSONA" << endl << "1. Personal Administrativo" << endl << "2. Investigador" 
 			 << endl << "3. Forense" << endl << "Respusta: ";
 		cin >> res;
-		cout >> endl;
+		cout << endl;
 		return res;	
 	}
 	return res;

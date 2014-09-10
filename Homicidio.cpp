@@ -11,7 +11,10 @@ Homicidio::Homicidio(int numero_caso, vector<Investigadores> investigadores,vect
 	this->sospechoso_principal = sospechoso_principal;
 	this->victima = victima;
 }
-Homicidio::Homicidio():Caso(){
+Homicidio::Homicidio(){
+
+}
+Homicidio::~Homicidio(){
 
 }
 void Homicidio::setSospechosos(vector<string> sospechosos){

@@ -13,7 +13,12 @@ Caso::Caso(int numero_caso, vector<Investigadores> investigadores,vector<Evidenc
 	this->fecha = fecha;
 	this->completado = completado;
 }
+Caso::~Caso(){
 
+}
+Caso::Caso(){
+	
+}
 void Caso::setNumeroCaso(int numero_caso){
 	this->numero_caso = numero_caso;
 }
