@@ -15,6 +15,7 @@ using namespace std;
 int menu(int);
 void agregarPersona();
 void agregarEvidencia();
+void agregarCaso();
 int main (int argc, char** argv){
 	int opcion;// opcion del menu
 	do{ // menu
@@ -102,6 +103,12 @@ int menu(int opcion){ // menu
 		cout << endl;
 		return res;	
 	}
+	if (opcion == 6){ // menu agregar caso
+		cout << "-----------------TIPO DE CASO-----------------" << endl << "1. Homicidio: " << endl << "Secuestro: "<< endl << "Ingrese su opcion: ";
+		cin >> res;
+		cout << endl;
+		return res;
+	}
 	return res;
 }
 void agregarPersona(){
@@ -113,9 +120,9 @@ void agregarPersona(){
 	string fechaNacimiento;
 
 	cout << endl << "***********************************************************" << endl;
-	cout << "Nombre Real: ";
+	cout << "Nombre real: ";
 	cin >> nombreReal;
-	cout << endl << "Nombre de Usuario: ";
+	cout << endl << "Nombre de usuario: ";
 	cin >> nombreUsuario;
 	cout << endl << "Contraseña: ";
 	cin >> contrasena;
@@ -123,7 +130,7 @@ void agregarPersona(){
 	cin >> edad;
 	cout << endl << "Identidad: ";
 	cin >> identidad;
-	cout << endl << "Fecha de Nacimiento: ";
+	cout << endl << "Fecha de nacimiento: ";
 	cin >> fechaNacimiento;
 
 	int opcion;
@@ -131,6 +138,53 @@ void agregarPersona(){
 
 }
 void agregarEvidencia(){
+	string nombre;
+	string tipoObjeto;
+	string lugar;
+	string huellas;
+	string procesada;
+
 	cout << endl << "***********************************************************" << endl;
-	
+	cout << "Nombre: ";
+	cin >> nombre;
+	cout << endl << "Tipo de objeto: ";
+	cin >> tipoObjeto;
+	cout << endl << "Lugar donde fue encontrada: ";
+	cin >> lugar;
+	cout << endl << "Tenía huellas: ";
+	cin >> huellas;
+	cout << endl << "Fue procesada: ";
+	cin >> procesada;
+}
+void agregarCaso(){
+	int numero_caso;
+	vector<Investigadores> investigadores;
+	vector<Evidencias> evidencia;
+	string hora;
+	string fecha;
+	bool completado;
+	char temp;
+	char resp;
+
+	cout << endl << "***********************************************************" << endl;
+	cout << "Número de caso: ";
+	cin >> numero_caso;
+	cout << endl << "Lista de investigadores: ";
+	//falta agregar los investigadores
+
+	cout << endl << "Evidencia: ";
+	//falta agregar las evidencias
+
+	cout << endl << "Hora: ";
+	cin >> hora;
+	cout << endl << "Fecha: ";
+	cin >> fecha;
+	cout << endl << "Caso está cerrado [S/N]: ";
+	cin >> temp;
+	if (char == 'S' || char == 's'){
+		completado = true;
+	} else {
+		completado = false;
+	}
+	cout << endl << ""
 }
