@@ -20,6 +20,7 @@ int menu(int);
 void agregarPersona();
 void agregarEvidencia();
 void agregarCaso();
+void eliminarEvidencia();
 int main (int argc, char** argv){
 	int opcion;// opcion del menu
 	do{ // menu
@@ -114,6 +115,16 @@ int menu(int opcion){ // menu
 		return res;
 	}
 	return res;
+}
+void eliminarEvidencia(){
+	for (int i = 0; i < listaevidencias.size(); i++)
+	{
+		cout<<"Indice:"<<i<<" "<<listaevidencias[i].toString()<<endl;
+	}
+	int index;
+	cout<<"Ingrese el indice de la evidencia que desea eliminar:";
+	cin>>index;
+	listaevidencias.erase(listaevidencias.begin()+i);
 }
 void agregarPersona(){
 	string nombreReal;
