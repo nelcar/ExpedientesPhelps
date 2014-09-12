@@ -132,7 +132,7 @@ void agregarPersona(){
 	cin >> identidad;
 	cout << endl << "Fecha de nacimiento: ";
 	getline(cin,fechaNacimiento);
-	
+
 	int opcion;
 	opcion = menu(5);
 
@@ -181,10 +181,10 @@ void agregarCaso(){
 	cin >> fecha;
 	cout << endl << "Caso está cerrado [S/N]: ";
 	cin >> temp;
-	if (char == 'S' || char == 's'){
+	if (temp == 'S' || temp == 's'){
 		completado = true;
 	} else {
 		completado = false;
 	}
-	cout << endl << ""
+	cout << endl << "";
 }

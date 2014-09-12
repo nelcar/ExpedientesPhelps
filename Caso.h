@@ -1,6 +1,5 @@
 #pragma once
 #include "Evidencias.h"
-#include "Investigadores.h"
 #include <vector>
 #include <string>
 using namespace std;

@@ -5,7 +5,7 @@
 #include <sstream>
 using namespace std;
 
-Caso::Caso(int numero_caso, vector<Investigadores> investigadores,vector<Evidencias> evidencia, string hora, string fecha, bool completado){
+Caso::Caso(int numero_caso, vector<Evidencias> evidencia, string hora, string fecha, bool completado){
 	this->numero_caso = numero_caso;
 	this->investigadores = investigadores;
 	this->evidencia = evidencia;
