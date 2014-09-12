@@ -21,6 +21,7 @@ void agregarPersona();
 void agregarEvidencia();
 void agregarCaso();
 void eliminarEvidencia();
+void modificarEvidencia();
 void agregarCaso();
 int main (int argc, char** argv){
 	int opcion;// opcion del menu
@@ -36,7 +37,7 @@ int main (int argc, char** argv){
 					agregarEvidencia();
 				}
 				if(opcion == 3){ //agregar Caso
-					agregarHomicidio();
+					//agregarHomicidio();
 				}
 			}while(opcion != 4);
 		}
@@ -125,7 +126,7 @@ void eliminarEvidencia(){
 	int index;
 	cout<<"Ingrese el indice de la evidencia que desea eliminar:";
 	cin>>index;
-	listaevidencias.erase(listaevidencias.begin()+i);
+	listaevidencias.erase(listaevidencias.begin()+index);
 }
 void agregarPersona(){
 	string nombreReal;
@@ -168,7 +169,7 @@ void agregarPersona(){
 		perAdministrativo.setClaveIngreso(clave);
 		perAdministrativo.setPuesto(puesto);
 
-		listapersonas.push_back(negro);
+		listapersonas.push_back(perAdministrativo);
 	}
 	if(opcion == 2){
 		Investigadores perInvestigadores;
@@ -177,6 +178,33 @@ void agregarPersona(){
 	if(opcion == 3){
 
 	}
+}
+void modificarEvidencia(){
+	string nombre;
+	string tipoObjeto;
+	string lugar;
+	string huellas;
+	string procesada;
+	cout<<"Ingrese indice de la evidencia que quiere modificar:";
+	int index;
+	cin>>index;
+	cout << endl << "***********************************************************" << endl;
+	cout << "Nombre: ";
+	getline(cin,nombre);
+	getline(cin,nombre);
+	cout << endl << "Tipo de objeto: ";
+	getline(cin,tipoObjeto);
+	cout << endl << "Lugar donde fue encontrada: ";
+	getline(cin,lugar);
+	cout << endl << "Tenía huellas: ";
+	getline(cin,huellas);
+	cout << endl << "Fue procesada: ";
+	getline(cin,procesada);
+	listaevidencias[index].setNombre(nombre);
+	listaevidencias[index].setLugar(lugar);
+	listaevidencias[index].setTipoObjeto(tipoObjeto);
+	listaevidencias[index].setHuellas(huellas);
+	listaevidencias[index].setProcesada(procesada);
 }
 void agregarEvidencia(){
 	string nombre;
@@ -213,6 +241,6 @@ void agregarCaso(){
 	string sospechoso_principal;
 	string victima;
 	string culpable;
-	cout << endl << "Ingrese el numero de caso:"
+	cout << endl << "Ingrese el numero de caso:";
 	
 }
