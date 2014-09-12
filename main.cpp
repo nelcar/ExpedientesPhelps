@@ -39,7 +39,7 @@ int main (int argc, char** argv){
 					agregarEvidencia();
 				}
 				if(opcion == 3){ //agregar Caso
-					//agregarHomicidio();
+					agregarHomicidio();
 				}
 			}while(opcion != 4);
 		}
@@ -85,7 +85,7 @@ int menu(int opcion){ // menu
 		return res;
 	}
 	if (opcion == 2){ // menu Agregar
-		cout << "--------------------AGREGAR--------------------" << endl << "1. Persona" << endl << "2. Evidencias" << endl << "3. Casos" 
+		cout << "--------------------AGREGAR--------------------" << endl << "1. Persona" << endl << "2. Evidencias" << endl << "3. Homicidio" 
 			 << endl << "4. Salir" << endl << "Ingrese su opcion: ";
 		cin >> res;
 		cout << endl;
@@ -246,10 +246,11 @@ void agregarHomicidio(){
 	cin >> numero_caso;
 	cout << endl << "Ingrese la hora:";
 	getline(cin,hora);
+	getline(cin,hora);
 	cout << endl << "Ingrese la fecha:";
 	getline(cin,fecha);
 	int num;
-	cout << endl << "Completado 1. si o 2. no";
+	cout << endl << "Completado 1. si o 2. no"<<endl;
 	cin >> num;
 	if(num == 1){
 		completado = true;
@@ -257,6 +258,7 @@ void agregarHomicidio(){
 		completado = false;
 	}
 	cout << endl << "Ingrese sospechoso principal";
+	getline(cin,sospechoso_principal);
 	getline(cin,sospechoso_principal);
 	cout << endl << "Ingrese nombre de la victima";
 	getline(cin,victima);
