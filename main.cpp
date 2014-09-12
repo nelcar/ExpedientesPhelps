@@ -163,6 +163,7 @@ void agregarEvidencia(){
 	objevidencia.setLugar(lugar);
 	objevidencia.setHuellas(huellas);
 	objevidencia.setProcesada(procesada);
+	listaevidencias.push_back(objevidencia);
 }
 void agregarCaso(){
 	int numero_caso;
