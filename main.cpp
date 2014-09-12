@@ -121,18 +121,18 @@ void agregarPersona(){
 
 	cout << endl << "***********************************************************" << endl;
 	cout << "Nombre real: ";
-	cin >> nombreReal;
+	getline(cin,nombreReal);
 	cout << endl << "Nombre de usuario: ";
 	cin >> nombreUsuario;
 	cout << endl << "Contraseña: ";
-	cin >> contrasena;
+	getline(cin,contrasena);
 	cout << endl << "Edad: ";
 	cin >> edad;
 	cout << endl << "Identidad: ";
 	cin >> identidad;
 	cout << endl << "Fecha de nacimiento: ";
-	cin >> fechaNacimiento;
-
+	getline(cin,fechaNacimiento);
+	
 	int opcion;
 	opcion = menu(5);
 
