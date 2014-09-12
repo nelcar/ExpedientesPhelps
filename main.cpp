@@ -22,6 +22,7 @@ void agregarEvidencia();
 void agregarCaso();
 void eliminarEvidencia();
 void agregarCaso();
+void agregarHomicidio();
 int main (int argc, char** argv){
 	int opcion;// opcion del menu
 	do{ // menu
@@ -204,9 +205,8 @@ void agregarEvidencia(){
 	objevidencia.setProcesada(procesada);
 	listaevidencias.push_back(objevidencia);
 }
-void agregarCaso(){
+void agregarHomicidio(){
 	int numero_caso;
-	vector<Evidencias> evidencia;
 	string hora;
 	string fecha;
 	bool completado;
@@ -214,5 +214,12 @@ void agregarCaso(){
 	string victima;
 	string culpable;
 	cout << endl << "Ingrese el numero de caso:"
+	cin >> numero_caso;
+	cout << endl << "Ingrese la hora:";
+	cin >> hora;
+	cout << endl << "Ingrese la fecha:";
+	cin >> fecha;
+	int num;
+	cout << endl << "Completado 1. si o 2. no";
 	
 }
