@@ -124,19 +124,27 @@ void agregarPersona(){
 	cout << "Nombre real: ";
 	getline(cin,nombreReal);
 	cout << endl << "Nombre de usuario: ";
-	cin >> nombreUsuario;
+	getline(cin,nombreUsuario);
 	cout << endl << "Contraseña: ";
 	getline(cin,contrasena);
 	cout << endl << "Edad: ";
-	cin >> edad;
+	getline(cin,edad);
 	cout << endl << "Identidad: ";
-	cin >> identidad;
+	getline(cin,identidad);
 	cout << endl << "Fecha de nacimiento: ";
 	getline(cin,fechaNacimiento);
 
 	int opcion;
 	opcion = menu(5);
+	if(opcion == 1){
+		PersonalAdministrativo
+	}
+	if(opcion == 2){
 
+	}
+	if(opcion == 3){
+
+	}
 }
 void agregarEvidencia(){
 	string nombre;
