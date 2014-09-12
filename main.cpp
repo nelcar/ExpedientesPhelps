@@ -6,6 +6,7 @@
 #include "Homicidio.h"
 #include "Persona.h"
 #include "Secuestro.h"
+#include "Investigadores.h"
 #include <iostream>
 #include <string>
 #include <vector>
