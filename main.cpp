@@ -242,7 +242,7 @@ void agregarHomicidio(){
 	string sospechoso_principal;
 	string victima;
 	string culpable;
-	cout << endl << "Ingrese el numero de caso:"
+	cout << endl << "Ingrese el numero de caso:";
 	cin >> numero_caso;
 	cout << endl << "Ingrese la hora:";
 	getline(cin,hora);
@@ -259,14 +259,14 @@ void agregarHomicidio(){
 	cout << endl << "Ingrese sospechoso principal";
 	getline(cin,sospechoso_principal);
 	cout << endl << "Ingrese nombre de la victima";
-	getline(cin,victima)
+	getline(cin,victima);
 	cout << endl << "Ingrese Culplable:";
-	getline(cin,culpable)
+	getline(cin,culpable);
 	Homicidio homicidio;
 	homicidio.setNumeroCaso(numero_caso);
 	homicidio.setHora(hora);
 	homicidio.setFecha(fecha);
-	homicidio.setCompletado(completado)
+	homicidio.setCompletado(completado);
 	homicidio.setSospechoso_principal(sospechoso_principal);
 	homicidio.setVictima(victima);
 	homicidio.setCulpable(culpable);
