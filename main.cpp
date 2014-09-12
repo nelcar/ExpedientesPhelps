@@ -21,6 +21,7 @@ void agregarPersona();
 void agregarEvidencia();
 void agregarCaso();
 void eliminarEvidencia();
+void agregarCaso();
 int main (int argc, char** argv){
 	int opcion;// opcion del menu
 	do{ // menu
@@ -56,13 +57,13 @@ int main (int argc, char** argv){
 		if(opcion == 3){ // eliminar
 			do{ //menu Eliminar
 				opcion = menu(4);
-				if(opcion == 1){ // modificar Persona
+				if(opcion == 1){ // eliminar Persona
 
 				}
-				if(opcion == 2){ // modificar Evidencia
-
+				if(opcion == 2){ // eliminar Evidencia
+					eliminarEvidencia();
 				}
-				if(opcion == 3){ // modificar Caso
+				if(opcion == 3){ // eliminar Caso
 
 				}
 			}while(opcion != 4);
@@ -204,5 +205,14 @@ void agregarEvidencia(){
 	listaevidencias.push_back(objevidencia);
 }
 void agregarCaso(){
+	int numero_caso;
+	vector<Evidencias> evidencia;
+	string hora;
+	string fecha;
+	bool completado;
+	string sospechoso_principal;
+	string victima;
+	string culpable;
+	cout << endl << "Ingrese el numero de caso:"
 	
 }
