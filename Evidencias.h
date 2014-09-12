@@ -18,13 +18,13 @@ public:
 
 	void setNombre(string);
 	void setTipoObjeto(string);
-	void setlugar(string);
-	void sethuellas(string);
-	void setprocesada(string);
+	void setLugar(string);
+	void setHuellas(string);
+	void setProcesada(string);
 	string getNombre();
 	string getTipoObjeto();
-	string getlugar();
-	string gethuellas();
-	string getprocesada();
+	string getLugar();
+	string getHuellas();
+	string getProcesada();
 	/* data */
 };

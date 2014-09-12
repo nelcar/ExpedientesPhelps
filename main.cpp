@@ -7,6 +7,7 @@
 #include "Persona.h"
 #include "Secuestro.h"
 #include "Investigadores.h"
+#include "PersonalAdministrativo.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -130,7 +131,7 @@ void agregarPersona(){
 	cout << endl << "Contraseña: ";
 	getline(cin,contrasena);
 	cout << endl << "Edad: ";
-	getline(cin,edad);
+	cin >> edad;
 	cout << endl << "Identidad: ";
 	getline(cin,identidad);
 	cout << endl << "Fecha de nacimiento: ";
@@ -139,7 +140,23 @@ void agregarPersona(){
 	int opcion;
 	opcion = menu(5);
 	if(opcion == 1){
-		PersonalAdministrativo
+		PersonalAdministrativo negro;
+		string clave;
+		string puesto;
+		cout << endl << "Ingrese clave para el ingreso al sistema";
+		getline(cin,clave);
+		cout << endl << "Ingrese el puesto en el organigrama";
+		getline(cin,puesto);
+
+		negro.setNombre(nombreReal);
+		negro.setUsuario(nombreUsuario);
+		negro.setEdad(edad);
+		negro.setId(identidad);
+		negro.setFecha_nac(fechaNacimiento);
+		negro.setClaveIngreso(clave);
+		negro.setPuesto(puesto);
+
+		agregarPersona.push_back(negro);
 	}
 	if(opcion == 2){
 

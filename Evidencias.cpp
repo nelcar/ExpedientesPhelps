@@ -31,13 +31,13 @@ void Evidencias::setNombre(string nombre){
 void Evidencias::setTipoObjeto(string tipoObjeto){
 	this->tipoObjeto = tipoObjeto;
 }
-void Evidencias::setlugar(string lugar){
+void Evidencias::setLugar(string lugar){
 	this->lugar = lugar;
 }
-void Evidencias::sethuellas(string huellas){
+void Evidencias::setHuellas(string huellas){
 	this->huellas = huellas;
 }
-void Evidencias::setprocesada(string procesada){
+void Evidencias::setProcesada(string procesada){
 	this->procesada = procesada;
 }
 string Evidencias::getNombre(){
@@ -46,12 +46,12 @@ string Evidencias::getNombre(){
 string Evidencias::getTipoObjeto(){
 	return tipoObjeto;
 }
-string Evidencias::getlugar(){
+string Evidencias::getLugar(){
 	return lugar;
 }
-string Evidencias::gethuellas(){
+string Evidencias::getHuellas(){
 	return huellas;
 }
-string Evidencias::getprocesada(){
+string Evidencias::getProcesada(){
 	return procesada;
 }
