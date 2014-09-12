@@ -140,7 +140,7 @@ void agregarPersona(){
 	int opcion;
 	opcion = menu(5);
 	if(opcion == 1){
-		PersonalAdministrativo negro;
+		PersonalAdministrativo perAdministrativo;
 		string clave;
 		string puesto;
 		cout << endl << "Ingrese clave para el ingreso al sistema";
@@ -148,18 +148,19 @@ void agregarPersona(){
 		cout << endl << "Ingrese el puesto en el organigrama";
 		getline(cin,puesto);
 
-		negro.setNombre(nombreReal);
-		negro.setUsuario(nombreUsuario);
-		negro.setEdad(edad);
-		negro.setId(identidad);
-		negro.setFecha_nac(fechaNacimiento);
-		negro.setClaveIngreso(clave);
-		negro.setPuesto(puesto);
+		perAdministrativo.setNombre(nombreReal);
+		perAdministrativo.setUsuario(nombreUsuario);
+		perAdministrativo.setEdad(edad);
+		perAdministrativo.setId(identidad);
+		perAdministrativo.setFecha_nac(fechaNacimiento);
+		perAdministrativo.setClaveIngreso(clave);
+		perAdministrativo.setPuesto(puesto);
 
 		listapersonas.push_back(negro);
 	}
 	if(opcion == 2){
-
+		Investigadores perInvestigadores;
+		int casos,casosCerrados,casosSinResolver;
 	}
 	if(opcion == 3){
 
