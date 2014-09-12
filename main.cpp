@@ -16,6 +16,7 @@ using namespace std;
 vector<Evidencias> listaevidencias;
 vector<Persona> listapersonas;
 vector<Caso> listacasos;
+vector<Homicidio> listahomicidios;
 int menu(int);
 void agregarPersona();
 void agregarEvidencia();
@@ -49,7 +50,7 @@ int main (int argc, char** argv){
 
 				}
 				if(opcion == 2){ // modificar Evidencia
-
+					modificarEvidencia();
 				}
 				if(opcion == 3){ // modificar Caso
 
@@ -241,17 +242,33 @@ void agregarHomicidio(){
 	string sospechoso_principal;
 	string victima;
 	string culpable;
-<<<<<<< HEAD
 	cout << endl << "Ingrese el numero de caso:"
 	cin >> numero_caso;
 	cout << endl << "Ingrese la hora:";
-	cin >> hora;
+	getline(cin,hora);
 	cout << endl << "Ingrese la fecha:";
-	cin >> fecha;
+	getline(cin,fecha);
 	int num;
 	cout << endl << "Completado 1. si o 2. no";
-=======
-	cout << endl << "Ingrese el numero de caso:";
->>>>>>> c5c2beb826e90ade643b514c499e7fb51236210b
-	
+	cin >> num;
+	if(num == 1){
+		completado = true;
+	}else{
+		completado = false;
+	}
+	cout << endl << "Ingrese sospechoso principal";
+	getline(cin,sospechoso_principal);
+	cout << endl << "Ingrese nombre de la victima";
+	getline(cin,victima)
+	cout << endl << "Ingrese Culplable:";
+	getline(cin,culpable)
+	Homicidio homicidio;
+	homicidio.setNumeroCaso(numero_caso);
+	homicidio.setHora(hora);
+	homicidio.setFecha(fecha);
+	homicidio.setCompletado(completado)
+	homicidio.setSospechoso_principal(sospechoso_principal);
+	homicidio.setVictima(victima);
+	homicidio.setCulpable(culpable);
+	listahomicidios.push_back(homicidio);
 }
