@@ -15,6 +15,6 @@ Investigadores.o:	Investigadores.cpp Investigadores.h Persona.h
 Persona.o:	Persona.cpp Persona.h
 	g++ -c Persona.cpp
 PersonalAdministrativo.o: PersonalAdministrativo.cpp PersonalAdministrativo.h Persona.h
-	g++ PersonalAdministrativo.cpp
+	g++ -c PersonalAdministrativo.cpp
 Secuestro.o:	Secuestro.cpp Secuestro.h Caso.h
-	g++ Secuestro.cpp
+	g++ -c Secuestro.cpp
