@@ -156,7 +156,7 @@ void agregarPersona(){
 		negro.setClaveIngreso(clave);
 		negro.setPuesto(puesto);
 
-		agregarPersona.push_back(negro);
+		listapersonas.push_back(negro);
 	}
 	if(opcion == 2){
 
