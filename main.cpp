@@ -1,6 +1,6 @@
 //JOSE ALBERTO PEJUAN
 //NELSON JESUS CARDENAS
-//OSCAR GABRIEL ORDOÑES
+//OSCAR GABRIEL ORDOÑEZ
 #include "Caso.h"
 #include "Evidencias.h"
 #include "Homicidio.h"
