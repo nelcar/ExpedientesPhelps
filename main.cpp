@@ -185,7 +185,7 @@ void agregarEvidencia(){
 	getline(cin,procesada);
 	objevidencia.setNombre(nombre);
 	objevidencia.setTipoObjeto(tipoObjeto);
-	objevidencia.setlugar(lugar);
+	objevidencia.setLugar(lugar);
 	objevidencia.setHuellas(huellas);
 	objevidencia.setProcesada(procesada);
 	listaevidencias.push_back(objevidencia);
@@ -213,7 +213,7 @@ void agregarCaso(){
 	cout << endl << "Lista de investigadores: ";
 	//falta agregar los investigadores
 	for(int i=0;i<listapersonas.size();i++){
-		if (listapersonas[i] typeof Investigadores)
+		if ((listapersonas[i]) typeof Investigadores)
 		{
 			cout<<"Indice:"<<i<<"\t"<<listapersonas[i].toString();
 		}

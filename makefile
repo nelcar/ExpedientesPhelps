@@ -1,3 +1,6 @@
+clean: expedientes
+	rm *.o
+
 expedientes:	main.o Caso.o Evidencias.o Forense.o Homicidio.o Investigadores.o Persona.o PersonalAdministrativo.o Secuestro.o
 	g++ main.o Caso.o Evidencias.o Forense.o Homicidio.o Investigadores.o Persona.o PersonalAdministrativo.o Secuestro.o -o expedientes
 main.o:	main.cpp Caso.h Evidencias.h Forense.h Homicidio.h Investigadores.h Persona.h PersonalAdministrativo.h Secuestro.h
