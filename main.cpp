@@ -185,14 +185,22 @@ void agregarEvidencia(){
 	getline(cin,procesada);
 	objevidencia.setNombre(nombre);
 	objevidencia.setTipoObjeto(tipoObjeto);
-	objevidencia.setLugar(lugar);
+	objevidencia.setlugar(lugar);
 	objevidencia.setHuellas(huellas);
 	objevidencia.setProcesada(procesada);
+	listaevidencias.push_back(objevidencia);
 }
 void agregarCaso(){
 	int numero_caso;
 	vector<Investigadores> investigadores;
+
+	for(int i=0;i<listapersonas.size();i++){
+	}
+
 	vector<Evidencias> evidencia;
+	for (int i = 0; i < listaevidencias.size(); i++)
+	{
+	}
 	string hora;
 	string fecha;
 	bool completado;
@@ -204,14 +212,39 @@ void agregarCaso(){
 	cin >> numero_caso;
 	cout << endl << "Lista de investigadores: ";
 	//falta agregar los investigadores
-
-	cout << endl << "Evidencia: ";
+	for(int i=0;i<listapersonas.size();i++){
+		if (listapersonas[i] typeof Investigadores)
+		{
+			cout<<"Indice:"<<i<<"\t"<<listapersonas[i].toString();
+		}
+	}
+	int numerotrabajodores;
+	int numeroevidencias;
+	cout<<"Ingrese numero de investigadores trabajando:";
+	cin>>numerotrabajodores;
+	int ind;
+	for (int i = 0; i < numerotrabajodores; i++)
+	{
+		cout<<"Indice del investigador numero "<<i<<":";
+		cin>>ind;
+		investigadores.push_back(listapersonas[ind]);
+	}
+	cout << endl << "Lista de evidencias: ";
 	//falta agregar las evidencias
+	cout<<"Ingrese numero de evidencias:";
+	cin>>numeroevidencias;
+	
+	for (int i = 0; i < numeroevidencias; i++)
+	{
+		cout<<"Indice de la evidencia numero "<<i<<":";
+		cin>>ind;
+		evidencia.push_back(listaevidencias[ind]);
+	}
 
 	cout << endl << "Hora: ";
-	cin >> hora;
+	getline(cin,hora);
 	cout << endl << "Fecha: ";
-	cin >> fecha;
+	getline(cin,fecha);
 	cout << endl << "Caso está cerrado [S/N]: ";
 	cin >> temp;
 	if (temp == 'S' || temp == 's'){
@@ -219,5 +252,12 @@ void agregarCaso(){
 	} else {
 		completado = false;
 	}
-	cout << endl << "";
+	Caso objcaso;
+	objcaso.setNumeroCaso(numero_caso);
+	objcaso.setEvidencia(evidencia);
+	objcaso.setHora(hora);
+	objcaso.setFecha(fecha);
+	objcaso.setCompletado(temp);
+	listacasos.push_back(objcaso);
+	cout << endl;
 }
