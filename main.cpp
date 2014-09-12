@@ -34,7 +34,7 @@ int main (int argc, char** argv){
 					agregarEvidencia();
 				}
 				if(opcion == 3){ //agregar Caso
-
+					agregarHomicidio();
 				}
 			}while(opcion != 4);
 		}
