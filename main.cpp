@@ -1,6 +1,6 @@
 //JOSE ALBERTO PEJUAN
 //NELSON JESUS CARDENAS
-//OSCAR GABRIEL ORDOÑES
+//OSCAR GABRIEL ORDOÑEZ
 #include "Caso.h"
 #include "Evidencias.h"
 #include "Homicidio.h"
@@ -21,6 +21,7 @@ void agregarPersona();
 void agregarEvidencia();
 void agregarCaso();
 void eliminarEvidencia();
+void modificarEvidencia();
 void agregarCaso();
 void agregarHomicidio();
 int main (int argc, char** argv){
@@ -37,7 +38,7 @@ int main (int argc, char** argv){
 					agregarEvidencia();
 				}
 				if(opcion == 3){ //agregar Caso
-					agregarHomicidio();
+					//agregarHomicidio();
 				}
 			}while(opcion != 4);
 		}
@@ -126,7 +127,7 @@ void eliminarEvidencia(){
 	int index;
 	cout<<"Ingrese el indice de la evidencia que desea eliminar:";
 	cin>>index;
-	listaevidencias.erase(listaevidencias.begin()+i);
+	listaevidencias.erase(listaevidencias.begin()+index);
 }
 void agregarPersona(){
 	string nombreReal;
@@ -169,7 +170,7 @@ void agregarPersona(){
 		perAdministrativo.setClaveIngreso(clave);
 		perAdministrativo.setPuesto(puesto);
 
-		listapersonas.push_back(negro);
+		listapersonas.push_back(perAdministrativo);
 	}
 	if(opcion == 2){
 		Investigadores perInvestigadores;
@@ -178,6 +179,33 @@ void agregarPersona(){
 	if(opcion == 3){
 
 	}
+}
+void modificarEvidencia(){
+	string nombre;
+	string tipoObjeto;
+	string lugar;
+	string huellas;
+	string procesada;
+	cout<<"Ingrese indice de la evidencia que quiere modificar:";
+	int index;
+	cin>>index;
+	cout << endl << "***********************************************************" << endl;
+	cout << "Nombre: ";
+	getline(cin,nombre);
+	getline(cin,nombre);
+	cout << endl << "Tipo de objeto: ";
+	getline(cin,tipoObjeto);
+	cout << endl << "Lugar donde fue encontrada: ";
+	getline(cin,lugar);
+	cout << endl << "Tenía huellas: ";
+	getline(cin,huellas);
+	cout << endl << "Fue procesada: ";
+	getline(cin,procesada);
+	listaevidencias[index].setNombre(nombre);
+	listaevidencias[index].setLugar(lugar);
+	listaevidencias[index].setTipoObjeto(tipoObjeto);
+	listaevidencias[index].setHuellas(huellas);
+	listaevidencias[index].setProcesada(procesada);
 }
 void agregarEvidencia(){
 	string nombre;
@@ -213,6 +241,7 @@ void agregarHomicidio(){
 	string sospechoso_principal;
 	string victima;
 	string culpable;
+<<<<<<< HEAD
 	cout << endl << "Ingrese el numero de caso:"
 	cin >> numero_caso;
 	cout << endl << "Ingrese la hora:";
@@ -221,5 +250,8 @@ void agregarHomicidio(){
 	cin >> fecha;
 	int num;
 	cout << endl << "Completado 1. si o 2. no";
+=======
+	cout << endl << "Ingrese el numero de caso:";
+>>>>>>> c5c2beb826e90ade643b514c499e7fb51236210b
 	
 }
