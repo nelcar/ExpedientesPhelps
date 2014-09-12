@@ -6,7 +6,7 @@
 #include <sstream>
 using namespace std;
 
-Homicidio::Homicidio(int numero_caso, vector<Investigadores> investigadores,vector<Evidencias> evidencia, string hora, string fecha, bool completado, vector<string> sospechosos, string sospechoso_principal, string victima):Caso(numero_caso, investigadores, evidencia, hora, fecha, completado){
+Homicidio::Homicidio(int numero_caso,vector<Evidencias> evidencia, string hora, string fecha, bool completado, vector<string> sospechosos, string sospechoso_principal, string victima):Caso(numero_caso, investigadores, evidencia, hora, fecha, completado){
 	this->sospechosos = sospechosos;
 	this->sospechoso_principal = sospechoso_principal;
 	this->victima = victima;

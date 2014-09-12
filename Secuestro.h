@@ -1,6 +1,7 @@
 #pragma once
 #include "Caso.h"
 #include <string>
+#include <vector>
 using namespace std;
 
 class Secuestro: public Caso
@@ -10,6 +11,7 @@ class Secuestro: public Caso
 	string motivo;
 	bool rescate;
 	int cantidad;
+	vector<Evidencias> evidencia;
 	bool completado_caso;
 	string estado_victima;
 public:
@@ -21,7 +23,7 @@ public:
 	void setCompletado_caso(bool);
 	void setEstado_victima(string);
 	string toString() const;
-	Secuestro(int, vector<Investigadores>,vector<Evidencias>, string, string, bool, string, string, string, bool, bool);
+	Secuestro(int,vector<Evidencias>, string, string, bool, string, string, string, bool, bool);
 	Secuestro();
 	~Secuestro();
 	

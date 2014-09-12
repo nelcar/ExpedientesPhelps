@@ -16,7 +16,7 @@ public:
 	void setVictima(string);
 	void setCulpable(string);
 	string toString() const;
-	Homicidio(int, vector<Investigadores>,vector<Evidencias>, string, string, bool, vector<string>, string, string);
+	Homicidio(int,vector<Evidencias>, string, string, bool, vector<string>, string, string);
 	Homicidio();
 	~Homicidio();
 	
