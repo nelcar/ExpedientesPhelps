@@ -12,7 +12,9 @@
 #include <vector>
 
 using namespace std;
-
+vector<Evidencias> listaevidencias;
+vector<Persona> listapersonas;
+vector<Caso> listacasos;
 int menu(int);
 void agregarPersona();
 void agregarEvidencia();
@@ -144,18 +146,23 @@ void agregarEvidencia(){
 	string lugar;
 	string huellas;
 	string procesada;
-
+	Evidencias objevidencia;
 	cout << endl << "***********************************************************" << endl;
 	cout << "Nombre: ";
-	cin >> nombre;
+	getline(cin,nombre);
 	cout << endl << "Tipo de objeto: ";
-	cin >> tipoObjeto;
+	getline(cin,tipoObjeto);
 	cout << endl << "Lugar donde fue encontrada: ";
-	cin >> lugar;
+	getline(cin,lugar);
 	cout << endl << "Tenía huellas: ";
-	cin >> huellas;
+	getline(cin,huellas);
 	cout << endl << "Fue procesada: ";
-	cin >> procesada;
+	getline(cin,procesada);
+	objevidencia.setNombre(nombre);
+	objevidencia.setTipoObjeto(tipoObjeto);
+	objevidencia.setLugar(lugar);
+	objevidencia.setHuellas(huellas);
+	objevidencia.setProcesada(procesada);
 }
 void agregarCaso(){
 	int numero_caso;
